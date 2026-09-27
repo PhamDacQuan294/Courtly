@@ -31,6 +31,7 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
+/** Cau hinh xac thuc: stateless, xac minh JWT o moi request. okoosososo Cau hinh xac thuc: stateless, xac minh JWT o moi request.Cau hinh xac thuc: stateless, xac minh JWT o moi request.*/ 
 /** Cau hinh xac thuc: stateless, xac minh JWT o moi request. */
 /** Cau hinh xac thuc: stateless, xac minh JWT o moi request. */
 /** Cau hinh xac thuc: stateless, xac minh JWT o moi request. */
