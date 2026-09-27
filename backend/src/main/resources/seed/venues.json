@@ -1,0 +1,827 @@
+{
+  "services": [
+    {
+      "code": "parking",
+      "name": "Bãi xe",
+      "description": "Giữ xe trong khuôn viên"
+    },
+    {
+      "code": "shower",
+      "name": "Phòng tắm",
+      "description": "Khu tắm và thay đồ"
+    },
+    {
+      "code": "racket_rental",
+      "name": "Thuê vợt",
+      "description": "Vợt cầu lông theo giờ"
+    },
+    {
+      "code": "drinking_water",
+      "name": "Nước uống",
+      "description": "Quầy nước tại sân"
+    }
+  ],
+  "venues": [
+    {
+      "key": "venue-01",
+      "ownerKey": "owner-01",
+      "name": "Sân Cầu Lông Minh Khai",
+      "slug": "san-cau-long-minh-khai",
+      "description": "Sân Cầu Lông Minh Khai tai Hai Bà Trưng, Ha Noi. Mo cua 05:00 - 23:00.",
+      "address": "38 Minh Khai, Hai Bà Trưng, Hà Nội",
+      "district": "Hai Bà Trưng",
+      "province": "Ha Noi",
+      "phone": "024 3821 8899",
+      "email": "san-cau-long-minh-khai@courtly.vn",
+      "latitude": 21.0009,
+      "longitude": 105.8586,
+      "averageRating": 4.8,
+      "reviewCount": 126,
+      "operatingHours": [
+        {
+          "dayOfWeek": 1,
+          "openTime": "05:00",
+          "closeTime": "23:00",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 2,
+          "openTime": "05:00",
+          "closeTime": "23:00",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 3,
+          "openTime": "05:00",
+          "closeTime": "23:00",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 4,
+          "openTime": "05:00",
+          "closeTime": "23:00",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 5,
+          "openTime": "05:00",
+          "closeTime": "23:00",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 6,
+          "openTime": "06:00",
+          "closeTime": "22:30",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 7,
+          "openTime": "06:00",
+          "closeTime": "22:30",
+          "closed": false
+        }
+      ],
+      "images": [
+        {
+          "key": "img-venue-01-01",
+          "imageUrl": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=1600&q=85",
+          "caption": "Mặt sân chính",
+          "displayOrder": 1,
+          "cover": true
+        },
+        {
+          "key": "img-venue-01-02",
+          "imageUrl": "https://images.unsplash.com/photo-1599474924187-334a4ae5bd3c?auto=format&fit=crop&w=1200&q=85",
+          "caption": "Khu sân buổi tối",
+          "displayOrder": 2,
+          "cover": false
+        },
+        {
+          "key": "img-venue-01-03",
+          "imageUrl": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=crop&w=1200&q=85",
+          "caption": "Khu chờ người chơi",
+          "displayOrder": 3,
+          "cover": false
+        },
+        {
+          "key": "img-venue-01-04",
+          "imageUrl": "https://images.unsplash.com/photo-1599474924187-334a4ae5bd3c?auto=format&fit=crop&w=1200&q=85",
+          "caption": "Không gian tập luyện",
+          "displayOrder": 4,
+          "cover": false
+        }
+      ],
+      "services": [
+        {
+          "code": "parking",
+          "price": 0,
+          "note": "Miễn phí"
+        },
+        {
+          "code": "shower",
+          "price": 0,
+          "note": "Có sẵn"
+        },
+        {
+          "code": "racket_rental",
+          "price": 30000,
+          "note": "Theo buổi"
+        },
+        {
+          "code": "drinking_water",
+          "price": null,
+          "note": "Tại quầy"
+        }
+      ],
+      "courts": [
+        {
+          "key": "court-01-a",
+          "name": "Sân A",
+          "courtCode": "A",
+          "courtType": "standard",
+          "surfaceType": "vinyl",
+          "indoor": true,
+          "priceRules": [
+            {
+              "dayOfWeek": null,
+              "startTime": "05:00",
+              "endTime": "16:00",
+              "pricePerHour": 100000
+            },
+            {
+              "dayOfWeek": null,
+              "startTime": "16:00",
+              "endTime": "23:00",
+              "pricePerHour": 140000
+            }
+          ]
+        },
+        {
+          "key": "court-01-b",
+          "name": "Sân B",
+          "courtCode": "B",
+          "courtType": "standard",
+          "surfaceType": "vinyl",
+          "indoor": true,
+          "priceRules": [
+            {
+              "dayOfWeek": null,
+              "startTime": "05:00",
+              "endTime": "16:00",
+              "pricePerHour": 100000
+            },
+            {
+              "dayOfWeek": null,
+              "startTime": "16:00",
+              "endTime": "23:00",
+              "pricePerHour": 140000
+            }
+          ]
+        },
+        {
+          "key": "court-01-vip",
+          "name": "Sân VIP",
+          "courtCode": "VIP",
+          "courtType": "vip",
+          "surfaceType": "wood",
+          "indoor": true,
+          "priceRules": [
+            {
+              "dayOfWeek": null,
+              "startTime": "05:00",
+              "endTime": "23:00",
+              "pricePerHour": 180000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "venue-02",
+      "ownerKey": "owner-01",
+      "name": "CLB Cầu Lông Thanh Xuân",
+      "slug": "clb-cau-long-thanh-xuan",
+      "description": "CLB Cầu Lông Thanh Xuân tai Thanh Xuân, Ha Noi. Mo cua 05:30 - 22:30.",
+      "address": "12 Khuất Duy Tiến, Thanh Xuân, Hà Nội",
+      "district": "Thanh Xuân",
+      "province": "Ha Noi",
+      "phone": "024 3555 1200",
+      "email": "clb-cau-long-thanh-xuan@courtly.vn",
+      "latitude": 20.9981,
+      "longitude": 105.7985,
+      "averageRating": 4.7,
+      "reviewCount": 98,
+      "operatingHours": [
+        {
+          "dayOfWeek": 1,
+          "openTime": "05:30",
+          "closeTime": "22:30",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 2,
+          "openTime": "05:30",
+          "closeTime": "22:30",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 3,
+          "openTime": "05:30",
+          "closeTime": "22:30",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 4,
+          "openTime": "05:30",
+          "closeTime": "22:30",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 5,
+          "openTime": "05:30",
+          "closeTime": "22:30",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 6,
+          "openTime": "05:30",
+          "closeTime": "22:30",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 7,
+          "openTime": "05:30",
+          "closeTime": "22:30",
+          "closed": false
+        }
+      ],
+      "images": [
+        {
+          "key": "img-venue-02-01",
+          "imageUrl": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=crop&w=1600&q=85",
+          "caption": "Sân Thanh Xuân",
+          "displayOrder": 1,
+          "cover": true
+        },
+        {
+          "key": "img-venue-02-02",
+          "imageUrl": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=1200&q=85",
+          "caption": "Khu thi đấu",
+          "displayOrder": 2,
+          "cover": false
+        }
+      ],
+      "services": [
+        {
+          "code": "parking",
+          "price": 0,
+          "note": "Miễn phí"
+        },
+        {
+          "code": "racket_rental",
+          "price": 25000,
+          "note": "Theo buổi"
+        }
+      ],
+      "courts": [
+        {
+          "key": "court-02-a",
+          "name": "Sân A",
+          "courtCode": "A",
+          "courtType": "standard",
+          "surfaceType": "vinyl",
+          "indoor": true,
+          "priceRules": [
+            {
+              "dayOfWeek": null,
+              "startTime": "05:30",
+              "endTime": "16:00",
+              "pricePerHour": 100000
+            },
+            {
+              "dayOfWeek": null,
+              "startTime": "16:00",
+              "endTime": "22:30",
+              "pricePerHour": 130000
+            }
+          ]
+        },
+        {
+          "key": "court-02-b",
+          "name": "Sân B",
+          "courtCode": "B",
+          "courtType": "standard",
+          "surfaceType": "vinyl",
+          "indoor": true,
+          "priceRules": [
+            {
+              "dayOfWeek": null,
+              "startTime": "05:30",
+              "endTime": "22:30",
+              "pricePerHour": 110000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "venue-03",
+      "ownerKey": "owner-02",
+      "name": "Sân Cầu Lông Cầu Giấy",
+      "slug": "san-cau-long-cau-giay",
+      "description": "Sân Cầu Lông Cầu Giấy tai Cầu Giấy, Ha Noi. Mo cua 06:00 - 23:30.",
+      "address": "66 Trần Thái Tông, Cầu Giấy, Hà Nội",
+      "district": "Cầu Giấy",
+      "province": "Ha Noi",
+      "phone": "024 3768 6688",
+      "email": "san-cau-long-cau-giay@courtly.vn",
+      "latitude": 21.0334,
+      "longitude": 105.7899,
+      "averageRating": 4.6,
+      "reviewCount": 74,
+      "operatingHours": [
+        {
+          "dayOfWeek": 1,
+          "openTime": "06:00",
+          "closeTime": "23:30",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 2,
+          "openTime": "06:00",
+          "closeTime": "23:30",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 3,
+          "openTime": "06:00",
+          "closeTime": "23:30",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 4,
+          "openTime": "06:00",
+          "closeTime": "23:30",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 5,
+          "openTime": "06:00",
+          "closeTime": "23:30",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 6,
+          "openTime": "06:00",
+          "closeTime": "23:30",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 7,
+          "openTime": "06:00",
+          "closeTime": "23:30",
+          "closed": false
+        }
+      ],
+      "images": [
+        {
+          "key": "img-venue-03-01",
+          "imageUrl": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=1600&q=85",
+          "caption": "Sân Cầu Giấy",
+          "displayOrder": 1,
+          "cover": true
+        },
+        {
+          "key": "img-venue-03-02",
+          "imageUrl": "https://images.unsplash.com/photo-1599474924187-334a4ae5bd3c?auto=format&fit=crop&w=1200&q=85",
+          "caption": "Khu sân trong nhà",
+          "displayOrder": 2,
+          "cover": false
+        }
+      ],
+      "services": [
+        {
+          "code": "parking",
+          "price": 0,
+          "note": "Miễn phí"
+        },
+        {
+          "code": "drinking_water",
+          "price": null,
+          "note": "Tại quầy"
+        }
+      ],
+      "courts": [
+        {
+          "key": "court-03-a",
+          "name": "Sân A",
+          "courtCode": "A",
+          "courtType": "standard",
+          "surfaceType": "vinyl",
+          "indoor": true,
+          "priceRules": [
+            {
+              "dayOfWeek": null,
+              "startTime": "06:00",
+              "endTime": "16:00",
+              "pricePerHour": 110000
+            },
+            {
+              "dayOfWeek": null,
+              "startTime": "16:00",
+              "endTime": "23:30",
+              "pricePerHour": 140000
+            }
+          ]
+        },
+        {
+          "key": "court-03-b",
+          "name": "Sân B",
+          "courtCode": "B",
+          "courtType": "standard",
+          "surfaceType": "wood",
+          "indoor": true,
+          "priceRules": [
+            {
+              "dayOfWeek": null,
+              "startTime": "06:00",
+              "endTime": "23:30",
+              "pricePerHour": 130000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "venue-04",
+      "ownerKey": "owner-02",
+      "name": "Badminton House Đống Đa",
+      "slug": "badminton-house-dong-da",
+      "description": "Badminton House Đống Đa tai Đống Đa, Ha Noi. Mo cua 05:00 - 24:00.",
+      "address": "21 Chùa Láng, Đống Đa, Hà Nội",
+      "district": "Đống Đa",
+      "province": "Ha Noi",
+      "phone": "024 3775 9900",
+      "email": "badminton-house-dong-da@courtly.vn",
+      "latitude": 21.0233,
+      "longitude": 105.8071,
+      "averageRating": 4.9,
+      "reviewCount": 143,
+      "operatingHours": [
+        {
+          "dayOfWeek": 1,
+          "openTime": "05:00",
+          "closeTime": "23:59",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 2,
+          "openTime": "05:00",
+          "closeTime": "23:59",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 3,
+          "openTime": "05:00",
+          "closeTime": "23:59",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 4,
+          "openTime": "05:00",
+          "closeTime": "23:59",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 5,
+          "openTime": "05:00",
+          "closeTime": "23:59",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 6,
+          "openTime": "05:00",
+          "closeTime": "23:59",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 7,
+          "openTime": "05:00",
+          "closeTime": "23:59",
+          "closed": false
+        }
+      ],
+      "images": [
+        {
+          "key": "img-venue-04-01",
+          "imageUrl": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=crop&w=1600&q=85",
+          "caption": "Badminton House Đống Đa",
+          "displayOrder": 1,
+          "cover": true
+        },
+        {
+          "key": "img-venue-04-02",
+          "imageUrl": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=1200&q=85",
+          "caption": "Khu thi đấu buổi tối",
+          "displayOrder": 2,
+          "cover": false
+        }
+      ],
+      "services": [
+        {
+          "code": "parking",
+          "price": 0,
+          "note": "Miễn phí"
+        },
+        {
+          "code": "shower",
+          "price": 0,
+          "note": "Có sẵn"
+        },
+        {
+          "code": "racket_rental",
+          "price": 30000,
+          "note": "Theo buổi"
+        }
+      ],
+      "courts": [
+        {
+          "key": "court-04-a",
+          "name": "Sân A",
+          "courtCode": "A",
+          "courtType": "vip",
+          "surfaceType": "wood",
+          "indoor": true,
+          "priceRules": [
+            {
+              "dayOfWeek": null,
+              "startTime": "05:00",
+              "endTime": "23:59",
+              "pricePerHour": 170000
+            }
+          ]
+        },
+        {
+          "key": "court-04-b",
+          "name": "Sân B",
+          "courtCode": "B",
+          "courtType": "standard",
+          "surfaceType": "vinyl",
+          "indoor": true,
+          "priceRules": [
+            {
+              "dayOfWeek": null,
+              "startTime": "05:00",
+              "endTime": "23:59",
+              "pricePerHour": 150000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "venue-05",
+      "ownerKey": "owner-03",
+      "name": "Sân Cầu Lông Green Court",
+      "slug": "san-cau-long-green-court",
+      "description": "Sân Cầu Lông Green Court tai Nam Từ Liêm, Ha Noi. Mo cua 05:00 - 22:00.",
+      "address": "9 Mễ Trì Hạ, Nam Từ Liêm, Hà Nội",
+      "district": "Nam Từ Liêm",
+      "province": "Ha Noi",
+      "phone": "024 3200 5511",
+      "email": "san-cau-long-green-court@courtly.vn",
+      "latitude": 21.0105,
+      "longitude": 105.7805,
+      "averageRating": 4.7,
+      "reviewCount": 81,
+      "operatingHours": [
+        {
+          "dayOfWeek": 1,
+          "openTime": "05:00",
+          "closeTime": "22:00",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 2,
+          "openTime": "05:00",
+          "closeTime": "22:00",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 3,
+          "openTime": "05:00",
+          "closeTime": "22:00",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 4,
+          "openTime": "05:00",
+          "closeTime": "22:00",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 5,
+          "openTime": "05:00",
+          "closeTime": "22:00",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 6,
+          "openTime": "05:00",
+          "closeTime": "22:00",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 7,
+          "openTime": "05:00",
+          "closeTime": "22:00",
+          "closed": false
+        }
+      ],
+      "images": [
+        {
+          "key": "img-venue-05-01",
+          "imageUrl": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=1600&q=85",
+          "caption": "Green Court",
+          "displayOrder": 1,
+          "cover": true
+        },
+        {
+          "key": "img-venue-05-02",
+          "imageUrl": "https://images.unsplash.com/photo-1599474924187-334a4ae5bd3c?auto=format&fit=crop&w=1200&q=85",
+          "caption": "Mặt sân tiêu chuẩn",
+          "displayOrder": 2,
+          "cover": false
+        }
+      ],
+      "services": [
+        {
+          "code": "parking",
+          "price": 0,
+          "note": "Miễn phí"
+        },
+        {
+          "code": "drinking_water",
+          "price": null,
+          "note": "Tại quầy"
+        }
+      ],
+      "courts": [
+        {
+          "key": "court-05-a",
+          "name": "Sân A",
+          "courtCode": "A",
+          "courtType": "standard",
+          "surfaceType": "vinyl",
+          "indoor": true,
+          "priceRules": [
+            {
+              "dayOfWeek": null,
+              "startTime": "05:00",
+              "endTime": "22:00",
+              "pricePerHour": 110000
+            }
+          ]
+        },
+        {
+          "key": "court-05-b",
+          "name": "Sân B",
+          "courtCode": "B",
+          "courtType": "standard",
+          "surfaceType": "vinyl",
+          "indoor": true,
+          "priceRules": [
+            {
+              "dayOfWeek": null,
+              "startTime": "05:00",
+              "endTime": "22:00",
+              "pricePerHour": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "venue-06",
+      "ownerKey": "owner-03",
+      "name": "Sân Cầu Lông Long Biên",
+      "slug": "san-cau-long-long-bien",
+      "description": "Sân Cầu Lông Long Biên tai Long Biên, Ha Noi. Mo cua 06:00 - 22:00.",
+      "address": "18 Nguyễn Văn Cừ, Long Biên, Hà Nội",
+      "district": "Long Biên",
+      "province": "Ha Noi",
+      "phone": "024 3872 7788",
+      "email": "san-cau-long-long-bien@courtly.vn",
+      "latitude": 21.0433,
+      "longitude": 105.8718,
+      "averageRating": 4.5,
+      "reviewCount": 64,
+      "operatingHours": [
+        {
+          "dayOfWeek": 1,
+          "openTime": "06:00",
+          "closeTime": "22:00",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 2,
+          "openTime": "06:00",
+          "closeTime": "22:00",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 3,
+          "openTime": "06:00",
+          "closeTime": "22:00",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 4,
+          "openTime": "06:00",
+          "closeTime": "22:00",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 5,
+          "openTime": "06:00",
+          "closeTime": "22:00",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 6,
+          "openTime": "06:00",
+          "closeTime": "22:00",
+          "closed": false
+        },
+        {
+          "dayOfWeek": 7,
+          "openTime": "06:00",
+          "closeTime": "22:00",
+          "closed": false
+        }
+      ],
+      "images": [
+        {
+          "key": "img-venue-06-01",
+          "imageUrl": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=crop&w=1600&q=85",
+          "caption": "Sân Long Biên",
+          "displayOrder": 1,
+          "cover": true
+        },
+        {
+          "key": "img-venue-06-02",
+          "imageUrl": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=1200&q=85",
+          "caption": "Khu vực thi đấu",
+          "displayOrder": 2,
+          "cover": false
+        }
+      ],
+      "services": [
+        {
+          "code": "parking",
+          "price": 0,
+          "note": "Miễn phí"
+        },
+        {
+          "code": "racket_rental",
+          "price": 20000,
+          "note": "Theo buổi"
+        }
+      ],
+      "courts": [
+        {
+          "key": "court-06-a",
+          "name": "Sân A",
+          "courtCode": "A",
+          "courtType": "standard",
+          "surfaceType": "vinyl",
+          "indoor": true,
+          "priceRules": [
+            {
+              "dayOfWeek": null,
+              "startTime": "06:00",
+              "endTime": "22:00",
+              "pricePerHour": 95000
+            }
+          ]
+        },
+        {
+          "key": "court-06-b",
+          "name": "Sân B",
+          "courtCode": "B",
+          "courtType": "standard",
+          "surfaceType": "vinyl",
+          "indoor": true,
+          "priceRules": [
+            {
+              "dayOfWeek": null,
+              "startTime": "06:00",
+              "endTime": "22:00",
+              "pricePerHour": 105000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
