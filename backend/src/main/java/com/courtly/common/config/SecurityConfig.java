@@ -32,9 +32,10 @@ import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 /** Cau hinh xac thuc: stateless, xac minh JWT o moi request. okoosososo Cau hinh xac thuc: stateless, xac minh JWT o moi request.Cau hinh xac thuc: stateless, xac minh JWT o moi request.*/ 
+/** Cau hinh xac thuc: stateless, xac minh JWT o moi request. */
 @Configuration
-@EnableConfigurationProperties({JwtProperties.class, CorsProperties.class,
-        MailProperties.class, PasswordResetProperties.class})
+@EnableConfigurationProperties({ JwtProperties.class, CorsProperties.class,
+        MailProperties.class, PasswordResetProperties.class })
 public class SecurityConfig {
 
     private static final String[] PUBLIC_POST_ENDPOINTS = {
@@ -44,7 +45,8 @@ public class SecurityConfig {
             "/api/v1/auth/password-reset",
             "/api/v1/auth/password-reset/verify",
             "/api/v1/auth/password-reset/confirm",
-            // Xem gia truoc khi dang nhap; chi buoc tao don that moi can dang nhap (2.1.27).
+            // Xem gia truoc khi dang nhap; chi buoc tao don that moi can dang nhap
+            // (2.1.27).
             "/api/v1/bookings/quote"
     };
 
